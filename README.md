@@ -5,7 +5,7 @@ A [forked](http://www.ps-scripts.com/bb/viewtopic.php?p=9745&sid=03d540b9a8788de
 
 This is a script that I created for myself that looks for all visible layers/groups and only exports the items at the root level. The top/left properties allow me to absolutely positiong the elements.
 
-There currently isn't any support for child groups or selected layers.
+There currently is no support for child groups or selected layers, nor was this ever intended for scalablity. This supports my current workflow.
 
 ## Instructions
 
@@ -13,7 +13,10 @@ There currently isn't any support for child groups or selected layers.
 
 2. Restart Photoshop
 
-3. File > Scripts > Export Elements to CSS
+3. Naigate to `File > Scripts` and run `Export Elements to CSS`
+
+4. You can add this to your shortcuts via `Edit > Keyboard Shortcuts`
+
 
 
 ### Export Example
