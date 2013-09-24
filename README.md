@@ -46,5 +46,5 @@ background-image: url('#{$url}images/"+layer.name+"@2x.png');
 I then fill the background-image to the width of the parent element:
 
 ```css
-* { -webkit-background-size: 100% auto }`
+* { -webkit-background-size: 100% auto }
 ```
