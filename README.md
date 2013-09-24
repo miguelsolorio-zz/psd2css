@@ -3,12 +3,13 @@ psd2css
 
 A [forked](http://www.ps-scripts.com/bb/viewtopic.php?p=9745&sid=03d540b9a8788dee9a1f51d6539e0ee0#p9745) Photoshop script that exports all visible layers to CSS with the top, left, width, height, and background image properties using [rems](http://snook.ca/archives/html_and_css/font-size-with-rem).
 
-This is a script that I created for myself that looks for all visible layers/groups and only exports the items at the root level. There currently isn't any support for child groups or selected layers.
+This is a script that I created for myself that looks for all visible layers/groups and only exports the items at the root level. The top/left properties allow me to absolutely positiong the elements.
+
+There currently isn't any support for child groups or selected layers.
 
 ## Instructions
 
-1. Place the "Export Elements to CSS.jsx" file into your Photoshop Scripts folder:
-~/Applications/Adobe\ Photoshop\ CC/Presets/Scripts
+1. Place the "Export Elements to CSS.jsx" file into your Photoshop Scripts folder: `~/Applications/Adobe\ Photoshop\ CC/Presets/Scripts`
 
 2. Restart Photoshop
 
