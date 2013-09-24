@@ -33,18 +33,18 @@ There currently is no support for child groups or selected layers, nor was this 
 
 ### REM units
 
-Since we're working with retina assets, all of my Photoshop docs are at retina size. This script takes all of layer measurements and divides them in half to get our base measurement. Then I round to the nearest 10th so that we have a 1:1 px ratio. Example: 11.8rem = 118px. This allows me to properly resize elements with full-width background images.
+I mostly work with retina assets so all of my Photoshop documents are at retina size. This script collects all of the layer measurements and divides them in half to get our base measurement. Then I round to the nearest 10th so that we have a 1:1 px ratio. For example: 11.8rem = 118px. This allows me to properly resize elements with full-width background images.
 
-### Background Image
+### Background Images
 
-The background-image property references a SASS variable called **$url** that allows me to define the image path: `$url: 'image/path/to/files'` and then I add a retina `@2x` attribute:
+The background-image property references a SASS variable: **$url** which allows me to define the image URL path: `$url: 'image/path/to/files'` and then I append it with the retina prefix `@2x`:
 
 ```css
 background-image: url('#{$url}images/"+layer.name+"@2x.png');
 ```
 
-I then fill the background-image to the width of the parent element:
+I am then able to declare all child elements to fill the background-image to the size of the parent element:
 
 ```css
-* { -webkit-background-size: 100% auto }
+#container * { -webkit-background-size: 100% auto }
 ```
